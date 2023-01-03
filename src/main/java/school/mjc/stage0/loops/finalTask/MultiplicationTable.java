@@ -12,12 +12,10 @@ public class MultiplicationTable {
 
         multiplicationTable.printTable(numberTableToPrint);
     }
-    public void printTable(int numberTableToPrint){
-        for (int i = 1; i <= numberTableToPrint; i++) {
-            for (int j = 1; j <= numberTableToPrint ; j++) {
-                System.out.print(i*j + " ");
-            }
-            System.out.println();
+
+    public void printTable(int numberTableToPrint) {
+        for (int j = 1; j <= 10; j++) {
+            System.out.println(j+" x "+numberTableToPrint + " = " + (j*numberTableToPrint));
         }
 
 

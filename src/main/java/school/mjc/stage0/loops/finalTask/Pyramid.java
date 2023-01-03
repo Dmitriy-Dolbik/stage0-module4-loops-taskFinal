@@ -11,7 +11,9 @@ public class Pyramid {
                         System.out.print(j - cathetusLength + 2);
                     }
                 } else {
-                    System.out.print(" ");
+                    if (j < cathetusLength + i) {
+                        System.out.print(" ");
+                    }
                 }
             }
             System.out.println();
@@ -39,3 +41,4 @@ public class Pyramid {
         new Pyramid().printPyramid(7);
     }
 }
+
